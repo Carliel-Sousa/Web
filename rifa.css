@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    padding: auto;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    color: #fff;
+}
+
+p {
+    width: 600px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+}
+
+h3 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+
+#Cancelar {
+    margin-top: 2px;
+}
+
+#submit {
+    margin-top: 2px;
+}
+
+div .ponto {
+    cursor: pointer;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+
+dialog {
+    padding: 10px;
+    border: 1px solid;background-color: burlywood;
+}
+
+.formulario {
+    width: 260px;
+    display: block;
+    padding: 3px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+#formDialog {
+    display: none;
+}
+
+form{margin-top: 10px;}
+
+.fechar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2px;
+    text-decoration: none;
+    border: 1px solid;
+    width: 18px;
+    height: 18px;
+    align-items: center;
+    text-align: center;
+    background-color: bisque;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.fechar:hover{
+    background-color: red;
+}
+
+.number {
+    width: 130px;
+}
+
+input {
+    width: 200px;
+    justify-content: left;
+    margin-left: 2px;
+}
+
+button[type="reset"],
+button[type="submit"]{
+    justify-content: center;
+    display: inline-block;
+    margin: auto;
+    align-items: center;
+}
+
+.mb-2{
+    margin: 5px;
+}
+
+.ponto {
+    width: 90%;
+    height: 420px;
+    border: 1px solid;
+    justify-content: center;
+    display: flex;
+    margin: 3px auto;
+    margin-top: 30px;
+    padding: 3px 3px 3px 3px;
+}
+
+.primeira {
+    width: 570px;
+    height: 40px;
+    border: 0;
+    justify-content: center;
+    display: inline-table;
+    margin: auto;
+    padding: 1px;
+    text-align: center;
+    top: 20px;
+}
+
+.numero:active {
+    background-color: #3e13e1;
+    background-attachment: fixed;
+}
+
+.numero:hover {
+    background-color: #3e13e1;
+    background-attachment: fixed;
+}
+
+.numero {
+    width: 100%;
+    min-width: 35px;
+    height: 40px;
+    border: 1px solid;
+    align-items: center;
+    text-align: center;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: wheat;
+}
+
+.numero:focus {
+    background-color: #3e13e1;
+    background-attachment: fixed;
+}
+
+.numero::before {
+    content: "";
+    background-color: #3e13e1;
+    background-attachment: fixed;
+}
+
+
+/*
+.numero:active {
+    background-color: #3d3a4b;
+    background-attachment: hidden;
+}
+
+
+/*#numero:checked {
+    background-color: #3e13e1 !important;
+}
+
+
+/*div.numero:visited {
+    background-color: #3e13e1 !important;
+}*/
+
+
+/*.numero:focus {
+    background-color: #3e13e1 !important;
+    background-attachment: fixed;
+}
+
+.numero:target {
+    background-color: #3e13e1;
+}
+
+.numero:target::before {
+    background-color: #3e13e1;
+}
+
+
+/*abaixo é uma forma de selecionar o background com determinadas quantidades
+/*.numero:nth-child(n+1) {
+        background-color: #3e13e1;
+    }*/
+
+@media screen and (max-width:980px) {
+    div.ponto {
+        width: 98%;
+        height: 100%;
+        justify-content: center;
+        display: block;
+        margin: auto;
+        padding: 5px;
+        margin-top: 15px;
+    }
+    .primeira {
+        width: 30%;
+        display: flex;
+    }
+    h1 {
+        width: 350px;
+        justify-self: center;
+        display: flex;
+        margin: auto;
+    }
+    p {
+        width: 350px;
+        justify-self: center;
+        display: flex;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:980px) {
+    div.ponto {
+        width: 400px;
+    }
+}

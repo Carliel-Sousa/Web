@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifa Solidaria</title>
+
+    <link rel="stylesheet" href="rifa.css">
+    
+</head>
+
+<body>
+    <h1>Rifa Solidaria</h1>
+    <p>Em prol da Reabiltação de Ícaro Gabriel o mesmo, tem paralisia cerebral, passará por uma cirurgia na coluna e precisará de fisioterapia intensa.</p>
+    <p>Valor: R$10,00 (O sorteio será transmitido)</p>
+    <h3>Instruções</h3>
+    <li>1. Clique no número desejado 2x (vezes);</li>
+    <li>2. Preencha seu nome e(ou) o(s) numero(s) escolhidos;</li>
+    <li>3. Após confirmar os local preenchidos, você será redirecionado para nosso whatsapp, lá informaremos a chave pix.</li>
+    <div class="ponto" id="openModal">
+        <dialog open id="formDialog">
+            <a href="#close" class="fechar" onclick="fecharModal();">X</a>
+            <form action="#" method="post " onsubmit="abrirWhatsapp()" autocomplete="on">
+                <div class="formulario">
+                    <label for="name" class="label mb-2">
+                        Nome: <input id="name" class="name" placeholder="Nome" autocomplete="on" required><br>
+                        Ponto(s): <input class="number" id="number"  placeholder="Escolha o(s) pontos" required="required">
+                        <br><br>
+                        <button id="cancelar" type="reset">Cancelar</button>
+                        <button id="submit" type="submit" onclick="confirm('Você redirecionado para nosso whatsapp!')">Cofirmar</button>
+                    </label>
+                </div>
+            </form>
+        </dialog>
+        <div class="primeira ">
+            <button class="numero" id="numero" onclick="mudarBackground() ">1</button>
+            <button class="numero" id="numero" onclick="mudarBackground()">2</button>
+            <button class="numero" id="numero" onclick="mudarBackground() ">3</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">4</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">5</button>
+            <button class="numero " id="numero " onclick="mudarBackground()">6</button>
+            <button class="numero " id="numero " onclick="mudarBackground()">7</button>
+            <button class="numero " id="numero " onclick="mudarBackground()">8</button>
+            <button class="numero " id="numero " onclick="mudarBackground()">9</button>
+            <button class="numero " id="numero " onclick="mudarBackground()">10</button>
+        </div>
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">11</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">12</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">13</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">14</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">15</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">16</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">17</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">18</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">19</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">20</button>
+        </div>
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">21</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">22</button><br>
+            <button class="numero " id="numero " onclick="mudarBackground() ">23</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">24</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">25</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">26</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">27</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">28</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">29</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">30</button>
+        </div>
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">31</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">32</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">33</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">34</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">35</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">36</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">37</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">38</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">39</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">40</button>
+        </div>
+
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">41</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">42</button><br>
+            <button class="numero " id="numero " onclick="mudarBackground() ">43</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">44</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">45</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">46</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">47</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">48</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">49</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">50</button>
+        </div>
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">51</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">52</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">53</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">54</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">55</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">56</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">57</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">58</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">59</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">60</button>
+        </div>
+
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">61</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">62</button><br>
+            <button class="numero " id="numero " onclick="mudarBackground() ">63</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">64</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">65</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">66</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">67</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">68</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">69</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">70</button>
+        </div>
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">71</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">72</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">73</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">74</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">75</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">76</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">77</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">78</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">79</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">80</button>
+        </div>
+
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">81</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">82</button><br>
+            <button class="numero " id="numero " onclick="mudarBackground() ">83</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">84</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">85</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">86</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">87</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">88</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">89</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">90</button>
+        </div>
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">91</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">92</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">93</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">94</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">95</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">96</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">97</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">98</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">99</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">100</button>
+        </div>
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">101</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">102</button><br>
+            <button class="numero " id="numero " onclick="mudarBackground() ">103</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">104</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">105</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">106</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">107</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">108</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">109</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">110</button>
+        </div>
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">111</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">112</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">113</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">114</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">115</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">116</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">117</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">118</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">119</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">120</button>
+        </div>
+
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">121</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">122</button><br>
+            <button class="numero " id="numero " onclick="mudarBackground() ">123</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">124</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">125</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">126</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">127</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">128</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">129</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">130</button>
+        </div>
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">131</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">132</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">133</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">134</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">135</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">136</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">137</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">138</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">139</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">140</button>
+        </div>
+
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">141</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">142</button><br>
+            <button class="numero " id="numero " onclick="mudarBackground() ">143</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">144</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">145</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">146</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">147</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">148</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">149</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">150</button>
+        </div>
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">151</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">152</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">153</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">154</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">155</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">156</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">157</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">158</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">159</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">160</button>
+        </div>
+
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">161</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">162</button><br>
+            <button class="numero " id="numero " onclick="mudarBackground() ">163</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">164</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">165</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">166</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">167</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">168</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">169</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">170</button>
+        </div>
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">171</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">172</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">173</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">174</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">175</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">176</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">177</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">178</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">179</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">180</button>
+        </div>
+
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">181</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">182</button><br>
+            <button class="numero " id="numero " onclick="mudarBackground() ">183</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">184</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">185</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">186</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">187</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">188</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">189</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">190</button>
+        </div>
+        <div class="primeira ">
+            <button class="numero " id="numero " onclick="mudarBackground() ">191</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">192</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">193</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">194</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">195</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">196</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">197</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">198</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">199</button>
+            <button class="numero " id="numero " onclick="mudarBackground() ">200</button>
+        </div>
+    </div>
+</body>
+<script>
+    function mudarBackground() {
+        var numero = document.getElementById('.numero');
+        numero.style.backgroundColor = "#3e13e1";
+    }
+
+    //Mudar background dos números já escolhidos
+
+    function mudarBackground(botao) {
+
+    var ponto = parseInt(botao.textContent);
+
+        if (botao.style.backgroundColor === 'wheat' || !botao.style.backgroundColor) {
+            botao.style.backgroundColor = 'green';
+        } else {
+            botao.style.backgroundColor = "green ";
+        }
+    }
+
+    //Abaixo criado variaveis para ativar a função 'click' quando o botão ser clicado
+
+
+
+    var btn = document.getElementById('numero');
+    var form = document.getElementById('formDialog');
+    btn.addEventListener('click', function() {
+        form.style.display = 'block';
+    });
+
+    //Ativando função "Click " para todos os botões
+
+    var buttons = document.getElementsByTagName("button");
+    var buttonsCount = buttons.length;
+    for (var i = 0; i < buttonsCount; i += 1) {
+        buttons[i].onclick = function(e) {
+            form.style.display = 'block';
+        }
+    }
+    //Abaixo a função "abrirWhatsapp() " é para mandar as infromações do formulário para whatsapp.
+
+    function abrirWhatsapp() {
+        var phonenumber = ""; //Digite o número de destino dentro das ASPAS para enviar os dados 
+
+        var name = document.querySelector('.name').value
+        var number = document.querySelector('.number').value;
+
+        var url = "" + phonenumber + "?text=" + " *Nome :* " + name + "%0a " + "*Seu número :* " + number + "%0a "
+        //Digite dentro das aspas duplas o link do whatsapp (crie um link de whatsapp, no google tem site que cria.)
+
+        //Alerta quando confirmar o Nome, Número
+        alert("Você redirecionado para nosso whatsapp! ");
+
+        window.open(url, '_blank').focus();
+    }
+    function fecharModal(){
+       document.getElementById("formDialog").style.opacity = "0";
+       document.getElementById("formDialog").style.display = "none";
+    }
+    
+</script>
+
+</html>
